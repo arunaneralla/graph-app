@@ -1,0 +1,7 @@
+DEBUG=graph-app:*
+authType=user
+graphURL=<credentials.uri>
+graphId=v1
+tokenURL=<credentials.uaa.url>
+clientId=<credentials.uaa.clientid>
+clientSecret=<credentials.uaa.clientsecret>

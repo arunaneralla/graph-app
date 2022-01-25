@@ -1,0 +1,16 @@
+---
+applications:
+- name: graph-app
+  random-route: true
+  memory: 128M
+  disk_quota: 1028M
+  buildpacks:
+    - nodejs_buildpack
+  env:
+    DEBUG: 'graph-app:*'
+    authType: user
+    graphURL: <credentials.uri>
+    graphId: v1
+    tokenURL: <credentials.uaa.url>
+    clientId: <credentials.uaa.clientid>
+    clientSecret: <credentials.uaa.clientsecret>
