@@ -5,3 +5,4 @@ graphId=v1
 tokenURL=<credentials.uaa.url>
 clientId=<credentials.uaa.clientid>
 clientSecret=<credentials.uaa.clientsecret>
+applicationInterfaceKey=saptest0

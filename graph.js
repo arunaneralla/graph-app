@@ -3,6 +3,7 @@ const debug = require('debug')('graph-app:graph');
 
 const graphURL = process.env.graphURL;
 const graphId = process.env.graphId;
+const applicationInterfaceKey = process.env.applicationInterfaceKey;
 
 class Graph {
   constructor(auth) {
@@ -18,7 +19,8 @@ class Graph {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token}`,
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "Application-Interface-Key": applicationInterfaceKey
       }
     };
     const response = await fetch(url, options);
